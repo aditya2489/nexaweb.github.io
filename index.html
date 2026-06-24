@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexaBank — Modern banking with zero fees, industry-leading interest rates, and smart money tools for every Indian.">
+  <meta name="theme-color" content="#0A1628">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NexaBank — Banking Reimagined">
+  <meta property="og:description" content="Zero-fee accounts, 7.2% savings interest, instant UPI transfers, and rewards cards. Banking built for your future.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nexabank.in">
+
+  <title>NexaBank — Banking Reimagined</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ─────────────────────────────────────────────────────────────────────────
+       CleverTap SDK — min.js CDN approach
+       This script is loaded FIRST (before app scripts) so that CleverTap
+       global object is available when page-view events fire on DOMContentLoaded.
+       Replace YOUR_CLEVERTAP_ACCOUNT_ID in js/clevertap.js with your real ID.
+  ──────────────────────────────────────────────────────────────────────────── -->
+  <!--<script src="clevertap.js"></script> -->
+  <script type="text/javascript">
+  if (window.clevertap) { }
+		else {
+			var clevertap = {
+				event: [],
+				profile: [],
+				account: [],
+				onUserLogin: [],
+				notifications: [],
+				privacy: [],
+			};
+      clevertap.spa = true;
+			// replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+			clevertap.account.push({ id: "TEST-5WK-87Z-666Z" });
+
+			clevertap.privacy.push({ optOut: false }); //set the flag to true, if the user of the device opts out of sharing their data
+
+			(function () {
+				var wzrk = document.createElement("script");
+				wzrk.type = "text/javascript";
+				wzrk.async = true;
+				wzrk.src = 'https://static.clevertap.com' + '/js/clevertap.min.js';
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(wzrk, s);
+			})();
+		}
+		console.log("Web SDK called");
+</script>
+</head>
+<body>
+
+  <!-- ── Announcement Strip ───────────────────────────────────────────────── -->
+  <div class="info-strip">
+    🔐 RBI Licensed Scheduled Bank &nbsp;|&nbsp; DICGC Insured up to ₹5 Lakhs &nbsp;|&nbsp; 24/7 Support: 1800-425-6392
+    <a href="/accounts" data-link>Open Account →</a>
+  </div>
+
+  <!-- ── Navigation ────────────────────────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="/" data-link class="nav-logo" aria-label="NexaBank Home">
+        <div class="nav-logo-icon" aria-hidden="true">N</div>
+        NexaBank
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="/" data-link class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="/accounts" data-link class="nav-link">Accounts</a></li>
+        <li><a href="/cards" data-link class="nav-link">Cards</a></li>
+        <li><a href="/loans" data-link class="nav-link">Loans</a></li>
+        <li><a href="/contact" data-link class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Desktop CTAs -->
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm"
+          onclick="Toast.show('Login Portal', 'Redirecting to NetBanking portal...')"
+          data-ct-event="CTA Clicked" data-ct-section="Nav" data-ct-label="Login">
+          Log In
+        </button>
+        <button class="btn btn-primary btn-sm"
+          onclick="handleOpenAccount('Nav')"
+          data-ct-event="CTA Clicked" data-ct-section="Nav" data-ct-label="Open Account">
+          Open Account
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ── Mobile Navigation Overlay ─────────────────────────────────────────── -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+    <a href="/" data-link>Home</a>
+    <a href="/accounts" data-link>Accounts</a>
+    <a href="/cards" data-link>Cards</a>
+    <a href="/loans" data-link>Loans</a>
+    <a href="/contact" data-link>Contact</a>
+    <div style="margin-top:32px; display:flex; flex-direction:column; gap:12px; align-items:center;">
+      <button class="btn btn-outline" onclick="Toast.show('Login Portal', 'Redirecting to NetBanking portal...')">Log In</button>
+      <button class="btn btn-primary" onclick="handleOpenAccount('Mobile Nav')">Open Account</button>
+    </div>
+  </div>
+
+  <!-- ── Main Application Mount ─────────────────────────────────────────────── -->
+  <main id="app" role="main" aria-live="polite">
+    <!-- Pages are rendered here dynamically by the Router -->
+    <div style="display:flex;align-items:center;justify-content:center;height:60vh;">
+      <p style="color:var(--gray-400);">Loading NexaBank…</p>
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="/" data-link class="nav-logo" style="gap:10px; display:flex; align-items:center;">
+            <div class="nav-logo-icon">N</div>
+            NexaBank
+          </a>
+          <p>Building the most trusted digital bank in India — with transparency, technology, and a genuine commitment to your financial wellbeing.</p>
+        </div>
+
+        <!-- Products -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="/accounts" data-link>Savings Account</a></li>
+            <li><a href="/accounts" data-link>Current Account</a></li>
+            <li><a href="/accounts" data-link>Fixed Deposits</a></li>
+            <li><a href="/cards" data-link>Credit Cards</a></li>
+            <li><a href="/cards" data-link>Debit Cards</a></li>
+            <li><a href="/loans" data-link>Loans</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/contact" data-link>About Us</a></li>
+            <li><a href="/contact" data-link>Careers</a></li>
+            <li><a href="/contact" data-link>Press & Media</a></li>
+            <li><a href="/contact" data-link>Investor Relations</a></li>
+            <li><a href="/contact" data-link>CSR Initiatives</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="/contact" data-link>Help Centre</a></li>
+            <li><a href="/contact" data-link>Report Fraud</a></li>
+            <li><a href="/contact" data-link>Branch Locator</a></li>
+            <li><a href="/contact" data-link>Privacy Policy</a></li>
+            <li><a href="/contact" data-link>Terms of Service</a></li>
+            <li><a href="/contact" data-link>PMJJBY & PMSBY</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 NexaBank Ltd. RBI Licence No. UBD.KA.MUM.D-1/12.05.200/2003. DICGC Member.</p>
+        <div class="footer-badges">
+          <span class="badge">ISO 27001</span>
+          <span class="badge">PCI DSS</span>
+          <span class="badge">RBI Licensed</span>
+          <span class="badge">DICGC Insured</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Page Scripts ────────────────────────────────────────────────────────
+       Load order matters:
+       1. clevertap.js  → already in <head>, initialises the global CT object
+       2. pages.js      → template strings for each route
+       3. app.js        → router, nav, and event handlers (bootstraps on DOMContentLoaded)
+  ──────────────────────────────────────────────────────────────────────────── -->
+  <script src="/js/pages.js"></script>
+  <script src="/js/app.js"></script>
+
+</body>
+</html>

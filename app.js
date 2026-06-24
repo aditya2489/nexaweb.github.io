@@ -5,11 +5,11 @@
 
 // ── Router ────────────────────────────────────────────────────────────────────
 const ROUTES = {
-  '/':         'home',
-  '/accounts': 'accounts',
-  '/cards':    'cards',
-  '/loans':    'loans',
-  '/contact':  'contact'
+  '/nexaweb.github.io/':         'home',
+  '/nexaweb.github.io/accounts': 'accounts',
+  '/nexaweb.github.io/cards':    'cards',
+  '/nexaweb.github.io/loans':    'loans',
+  '/nexaweb.github.io/contact':  'contact'
 };
 
 const Router = {

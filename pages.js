@@ -30,7 +30,7 @@ const Pages = {
                 data-ct-event="CTA Clicked" data-ct-section="Hero" data-ct-label="Open Free Account">
                 Open Free Account
               </button>
-              <a href="/accounts" data-link class="btn btn-outline btn-lg"
+              <a href="/nexaweb.github.io/accounts" data-link class="btn btn-outline btn-lg"
                 data-ct-event="CTA Clicked" data-ct-section="Hero" data-ct-label="Explore Accounts">
                 Explore Accounts
               </a>
@@ -127,7 +127,7 @@ const Pages = {
             <p class="eyebrow product-card-eyebrow">Savings & Current</p>
             <h3>Accounts</h3>
             <p>Earn up to 7.2% p.a. on your savings with zero minimum balance requirements and no hidden charges.</p>
-            <a href="/accounts" data-link class="btn btn-outline"
+            <a href="/nexaweb.github.io/accounts" data-link class="btn btn-outline"
               data-ct-event="Product Card Clicked" data-ct-section="Products" data-ct-label="Accounts">
               View accounts →
             </a>

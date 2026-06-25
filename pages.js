@@ -30,7 +30,7 @@ const Pages = {
                 data-ct-event="CTA Clicked" data-ct-section="Hero" data-ct-label="Open Free Account">
                 Open Free Account
               </button>
-              <a href="/nexaweb.github.io/accounts" data-link class="btn btn-outline btn-lg"
+              <a href="https://aditya2489.github.io/nexaweb.github.io/accounts" data-link class="btn btn-outline btn-lg"
                 data-ct-event="CTA Clicked" data-ct-section="Hero" data-ct-label="Explore Accounts">
                 Explore Accounts
               </a>
@@ -127,7 +127,7 @@ const Pages = {
             <p class="eyebrow product-card-eyebrow">Savings & Current</p>
             <h3>Accounts</h3>
             <p>Earn up to 7.2% p.a. on your savings with zero minimum balance requirements and no hidden charges.</p>
-            <a href="/nexaweb.github.io/accounts" data-link class="btn btn-outline"
+            <a href="https://aditya2489.github.io/nexaweb.github.io/accounts" data-link class="btn btn-outline"
               data-ct-event="Product Card Clicked" data-ct-section="Products" data-ct-label="Accounts">
               View accounts →
             </a>
@@ -137,7 +137,7 @@ const Pages = {
             <p class="eyebrow product-card-eyebrow">Debit & Credit</p>
             <h3>Cards</h3>
             <p>From everyday cashback to premium travel rewards — find a card that pays you back for every purchase.</p>
-            <a href="/cards" data-link class="btn btn-outline"
+            <a href="https://aditya2489.github.io/nexaweb.github.io/cards" data-link class="btn btn-outline"
               data-ct-event="Product Card Clicked" data-ct-section="Products" data-ct-label="Cards">
               View cards →
             </a>
@@ -147,7 +147,7 @@ const Pages = {
             <p class="eyebrow product-card-eyebrow">Personal & Home</p>
             <h3>Loans</h3>
             <p>Get funds when you need them. Competitive rates starting at 8.5% p.a. with flexible repayment terms.</p>
-            <a href="/loans" data-link class="btn btn-outline"
+            <a href="https://aditya2489.github.io/nexaweb.github.io/loans" data-link class="btn btn-outline"
               data-ct-event="Product Card Clicked" data-ct-section="Products" data-ct-label="Loans">
               View loans →
             </a>
@@ -157,7 +157,7 @@ const Pages = {
             <p class="eyebrow product-card-eyebrow">Mutual Funds & FD</p>
             <h3>Investments</h3>
             <p>Start investing in minutes. SIPs from ₹100, tax-saving FDs, and curated mutual fund portfolios.</p>
-            <a href="/contact" data-link class="btn btn-outline"
+            <a href="https://aditya2489.github.io/nexaweb.github.io/contact" data-link class="btn btn-outline"
               data-ct-event="Product Card Clicked" data-ct-section="Products" data-ct-label="Investments">
               Learn more →
             </a>
@@ -242,7 +242,7 @@ const Pages = {
       <div class="container">
         <div class="page-hero-inner">
           <div class="breadcrumb">
-            <a href="/" data-link>Home</a> / <span>Accounts</span>
+            <a href="https://aditya2489.github.io/nexaweb.github.io/" data-link>Home</a> / <span>Accounts</span>
           </div>
           <h1 class="display-xl">Savings that actually <span class="text-gold">earn</span></h1>
           <p>Choose from accounts built for every lifestyle — from zero-balance daily banking to high-yield savings that grow your wealth on autopilot.</p>
@@ -369,7 +369,7 @@ const Pages = {
       <div class="container">
         <div class="page-hero-inner">
           <div class="breadcrumb">
-            <a href="/" data-link>Home</a> / <span>Cards</span>
+            <a href="https://aditya2489.github.io/nexaweb.github.io/" data-link>Home</a> / <span>Cards</span>
           </div>
           <h1 class="display-xl">Cards that pay <span class="text-gold">you back</span></h1>
           <p>Every swipe earns rewards. Every statement is a treat. Find the card that turns your daily spending into points, cashback, or miles.</p>
@@ -515,7 +515,7 @@ const Pages = {
       <div class="container">
         <div class="page-hero-inner">
           <div class="breadcrumb">
-            <a href="/" data-link>Home</a> / <span>Loans</span>
+            <a href="https://aditya2489.github.io/nexaweb.github.io/" data-link>Home</a> / <span>Loans</span>
           </div>
           <h1 class="display-xl">Funds when <span class="text-gold">life calls</span> for them</h1>
           <p>Whether it's a dream home, your child's education, or bridging a cash gap — NexaBank loans are designed to be fair, fast, and flexible.</p>
@@ -651,7 +651,7 @@ const Pages = {
       <div class="container">
         <div class="page-hero-inner">
           <div class="breadcrumb">
-            <a href="/" data-link>Home</a> / <span>Contact</span>
+            <a href="https://aditya2489.github.io/nexaweb.github.io/" data-link>Home</a> / <span>Contact</span>
           </div>
           <h1 class="display-xl">We're here <span class="text-gold">for you</span></h1>
           <p>Have a question, a complaint, or just want to learn more? Our team is available 24/7 — we promise a real human, not a bot.</p>
